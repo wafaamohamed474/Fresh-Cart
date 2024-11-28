@@ -1,0 +1,27 @@
+.userOrders .row1 {
+  background-color: var(--form-bg-color);
+  border-bottom: 1px solid var(--main-text-color);
+  padding: 20px;
+}
+.userOrders .row1 p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--main-text-color);
+}
+.userOrders .row1 p span {
+  color: var(--nav-link-color);
+  font-weight: 500;
+  font-size: 16px;
+}
+.userOrders .item_image_box {
+  padding: 20px;
+}
+.userOrders .order-info h6 {
+  color: var(--main-green-color);
+}
+.userOrders a {
+  display: inline-block;
+  margin-top: 20px !important;
+  text-decoration: underline !important;
+  color: var(--main-text-color);
+}

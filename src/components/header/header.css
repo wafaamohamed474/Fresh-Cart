@@ -1,0 +1,206 @@
+.header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+}
+.subsetHeaderFirst {
+  transition: all 0.5s ease-in-out;
+}
+.subsetHeaderFirst.fixedHeaderFirst {
+  transform: translateY(0);
+}
+.subsetHeaderFirst:not(.fixedHeaderFirst) {
+  transform: translateY(-100%);
+  transition: transform 0.5s ease-in-out;
+}
+.header .navbar.fixedHeaderSecond {
+  transform: translateY(0);
+}
+.header .navbar:not(.fixedHeaderSecond) {
+  transform: translateY(-93px);
+  transition: transform 0.5s ease-in-out;
+}
+.header .bankPaymentOffer {
+  position: relative;
+  width: 100%;
+}
+.header .bankPaymentOffer div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: var(--main-green-color);
+  opacity: 0.5;
+}
+.header .headerLogoContent {
+  padding: 10px 0;
+  background-color: white;
+}
+.header .headerLogoContent .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .headerLogoContent .headerLogo {
+  width: 200px;
+}
+.header .headerLogoContent .headerLogoIcons{
+  width: fit-content !important;
+  display: flex;
+  align-items: center;
+}
+.header .headerLogoContent .headerLogoIcons .LinkIcon{
+  color: var(--main-green-color);
+  padding-right: 20px;
+}
+.header .headerLogoContent .headerLogoIcons svg{
+  font-size: 20px;
+}
+.header .navbar {
+  padding: 10px 0 !important;
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+  background-color: var(--bg-nav) !important;
+  z-index: -100 !important;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.header .nav-link {
+  color: var(--header-link) !important;
+  border-radius: 3px;
+}
+.nav-link.active {
+  background-color: var(--main-green-color) !important;
+  color: white !important;
+}
+.header .navbar .btn {
+  border-color: var(--main-green-color) !important;
+}
+.header .navbar .btn:hover {
+  background-color: var(--main-green-color) !important;
+  color: white;
+}
+.header .headerLogoContent .userList {
+  width: 150px;
+  position: relative;
+  padding: 0;
+}
+
+.header .userList .btn {
+  background-color: #bdbdbd;
+  display: flex;
+  align-items: center;
+  padding: 3px 10px;
+}
+.header .userList .btn div {
+  width: 35px !important;
+  height: 35px !important;
+  border-radius: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  color: var(--main-green-color);
+}
+.header .userList .btn span {
+  font-weight: 600;
+  color: white;
+  font-size: 15px;
+}
+.header .headerLogoContent .userList ul {
+  position: absolute;
+  width: 180px;
+  height: 150px;
+  right: 20px;
+  top: 70px;
+  background-color: white;
+  z-index: 100 !important;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: -2px 2px 8px 1px rgba(145, 158, 179, 0.244);
+  padding: 0;
+}
+.header .userList .displayNone {
+  display: none !important;
+}
+.header .userList ul li {
+  list-style: none;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  width: 120px;
+  text-align: center;
+}
+.header .userList ul li:first-of-type {
+  background-color: black;
+  margin-bottom: 10px;
+}
+.header .userList ul li:last-of-type {
+  background-color: rgb(220, 185, 9);
+}
+.header .userList ul li a {
+  color: white;
+  text-decoration: underline !important;
+  font-size: 16px;
+}
+.header .navbar .navbar-toggler:focus {
+  box-shadow: none !important;
+}
+.header .signOut{
+  border: none;
+  background: transparent;
+  text-decoration: underline;
+}
+.header .navbar-nav a {
+  padding: 10px;
+}
+.header .navbar form {
+  position: relative;
+}
+
+.header .navbar .socialIcons {
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .header .headerLogo img {
+    width: 150px;
+  }
+  .header .headerLogoContent .userList {
+    width: 70px;
+  }
+  .header .userList .btn div {
+    margin: 0;
+  }
+  .header .userList .btn {
+    padding: 0px;
+    border-radius: 100%;
+  }
+  .header .headerLogoContent .userList span {
+    display: none;
+  }
+   .header .navbar form {
+   padding: 10px 0;
+  }
+}
+@media (min-width: 768px) {
+  .header.navbar:not(.fixedHeaderSecond) {
+    transform: translateY(-105px);
+  }
+}
+@media (min-width: 992px) {
+ 
+  .header .navbar .socialIcons {
+    justify-content: space-between;
+  }
+  .header .navbar-expand-lg .navbar-collapse {
+    justify-content: space-around;
+  }
+  .header .navbar:not(.fixedHeaderSecond) {
+    transform: translateY(-135px);
+  }
+}
+ 

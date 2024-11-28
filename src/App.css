@@ -1,38 +1,317 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html{
+  scroll-behavior: smooth;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: "Encode Sans Expanded", sans-serif;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+:root {
+  --nav-icon-color: rgb(0, 0, 0, 0.65);
+  --nav-link-color: #212529;
+  --header-link: #000000a6;
+  --bg-nav: rgb(248, 249, 250);
+  --form-bg-color: #f0f3f2;
+  --main-green-color: #0aad0a;
+  --alert-bg: #f8d7da;
+  --alert-border-color: #f1aeb5;
+  --main-text-color: #212529bf;
+  --Asterisk-color: #dc3545;
+  --border-color: #dee2e6;
+}
+img {
+  width: 100%;
+}
+.pcolor {
+  color: var(--nav-link-color);
+}
+.pTB {
+  padding-top: 230px;
+  padding-bottom: 50px;
+}
+.main-btn {
+  padding: 7px 20px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+a {
+  text-decoration: none !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+li,
+a {
+  font-family: "Encode Sans Expanded", sans-serif;
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 20px;
+  margin: 20px 0;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-green-color);
+  border-radius: 20px;
+}
+::selection{
+  background-color: var(--main-green-color);
+  color: white
+}
+.slick-arrow {
+  display: none !important;
+}
+.mainLoader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.861);
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+}
+.mainLoader img {
+  width: 300px;
+  margin-bottom: 20px;
+}
+.mainLoader h2 {
+  font-weight: 600;
+  color: var(--nav-link-color);
+}
+.mainLoader h2 span {
+  color: var(--main-green-color) !important;
+}
+.loader {
+  font-size: 4px;
+  width: 1em !important;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  text-indent: -9999em;
+  animation: mulShdSpin 1.1s infinite ease;
+  transform: translateZ(0);
+  margin-right: 20px;
+}
+.loader1 {
+  font-size: 5px;
+  width: 1em !important;
+  height:1em;
+  border-radius: 50%;
+  position: relative;
+  text-indent: -9999em;
+  animation: mulShdSpin1 1.1s infinite ease;
+  transform: translateZ(0);
+  display: inline-block;
+}
+.loader3 {
+  width: 55px;
+  aspect-ratio: 1;
+  --_g: no-repeat
+    radial-gradient(farthest-side, var(--main-green-color) 94%, #5249cf00);
+  background: var(--_g) 0 0, var(--_g) 100% 0, var(--_g) 100% 100%,
+    var(--_g) 0 100%;
+  background-size: 40% 40%;
+  animation: l38 0.5s infinite;
+  margin-bottom: 20px;
+}
+ 
+@keyframes l38 {
+  100% {
+    background-position: 100% 0, 100% 100%, 0 100%, 0 0;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+@keyframes mulShdSpin {
+  0%,
+  100% {
+    box-shadow: 0em -2.6em 0em 0em #ffffff,
+      1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2),
+      2.5em 0em 0 0em rgba(255, 255, 255, 0.2),
+      1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2),
+      0em 2.5em 0 0em rgba(255, 255, 255, 0.2),
+      -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2),
+      -2.6em 0em 0 0em rgba(255, 255, 255, 0.5),
+      -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.7);
+  }
+  12.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.7),
+      1.8em -1.8em 0 0em #ffffff, 2.5em 0em 0 0em rgba(255, 255, 255, 0.2),
+      1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2),
+      0em 2.5em 0 0em rgba(255, 255, 255, 0.2),
+      -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2),
+      -2.6em 0em 0 0em rgba(255, 255, 255, 0.2),
+      -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.5);
+  }
+  25% {
+    box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.5),
+      1.8em -1.8em 0 0em rgba(255, 255, 255, 0.7), 2.5em 0em 0 0em #ffffff,
+      1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2),
+      0em 2.5em 0 0em rgba(255, 255, 255, 0.2),
+      -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2),
+      -2.6em 0em 0 0em rgba(255, 255, 255, 0.2),
+      -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
+  }
+  37.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2),
+      1.8em -1.8em 0 0em rgba(255, 255, 255, 0.5),
+      2.5em 0em 0 0em rgba(255, 255, 255, 0.7), 1.75em 1.75em 0 0em #ffffff,
+      0em 2.5em 0 0em rgba(255, 255, 255, 0.2),
+      -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2),
+      -2.6em 0em 0 0em rgba(255, 255, 255, 0.2),
+      -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2),
+      1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2),
+      2.5em 0em 0 0em rgba(255, 255, 255, 0.5),
+      1.75em 1.75em 0 0em rgba(255, 255, 255, 0.7), 0em 2.5em 0 0em #ffffff,
+      -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2),
+      -2.6em 0em 0 0em rgba(255, 255, 255, 0.2),
+      -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
+  }
+  62.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2),
+      1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2),
+      2.5em 0em 0 0em rgba(255, 255, 255, 0.2),
+      1.75em 1.75em 0 0em rgba(255, 255, 255, 0.5),
+      0em 2.5em 0 0em rgba(255, 255, 255, 0.7), -1.8em 1.8em 0 0em #ffffff,
+      -2.6em 0em 0 0em rgba(255, 255, 255, 0.2),
+      -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
+  }
+  75% {
+    box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2),
+      1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2),
+      2.5em 0em 0 0em rgba(255, 255, 255, 0.2),
+      1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2),
+      0em 2.5em 0 0em rgba(255, 255, 255, 0.5),
+      -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.7), -2.6em 0em 0 0em #ffffff,
+      -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
+  }
+  87.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2),
+      1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2),
+      2.5em 0em 0 0em rgba(255, 255, 255, 0.2),
+      1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2),
+      0em 2.5em 0 0em rgba(255, 255, 255, 0.2),
+      -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.5),
+      -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
+  }
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes mulShdSpin1 {
+  0%,
+  100% {
+    box-shadow: 0em -2.6em 0em 0em #007bff,
+      1.8em -1.8em 0 0em rgba(0, 123, 255, 0.2),
+      2.5em 0em 0 0em rgba(0, 123, 255, 0.2),
+      1.75em 1.75em 0 0em rgba(0, 123, 255, 0.2),
+      0em 2.5em 0 0em rgba(0, 123, 255, 0.2),
+      -1.8em 1.8em 0 0em rgba(0, 123, 255, 0.2),
+      -2.6em 0em 0 0em rgba(0, 123, 255, 0.5),
+      -1.8em -1.8em 0 0em rgba(0, 123, 255, 0.7);
   }
-  to {
-    transform: rotate(360deg);
+  12.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(0, 123, 255, 0.7),
+      1.8em -1.8em 0 0em #007bff, 2.5em 0em 0 0em rgba(0, 123, 255, 0.2),
+      1.75em 1.75em 0 0em rgba(0, 123, 255, 0.2),
+      0em 2.5em 0 0em rgba(0, 123, 255, 0.2),
+      -1.8em 1.8em 0 0em rgba(0, 123, 255, 0.2),
+      -2.6em 0em 0 0em rgba(0, 123, 255, 0.2),
+      -1.8em -1.8em 0 0em rgba(0, 123, 255, 0.5);
   }
+  25% {
+    box-shadow: 0em -2.6em 0em 0em rgba(0, 123, 255, 0.5),
+      1.8em -1.8em 0 0em rgba(0, 123, 255, 0.7), 2.5em 0em 0 0em #007bff,
+      1.75em 1.75em 0 0em rgba(0, 123, 255, 0.2),
+      0em 2.5em 0 0em rgba(0, 123, 255, 0.2),
+      -1.8em 1.8em 0 0em rgba(0, 123, 255, 0.2),
+      -2.6em 0em 0 0em rgba(0, 123, 255, 0.2),
+      -1.8em -1.8em 0 0em rgba(0, 123, 255, 0.2);
+  }
+  37.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(0, 123, 255, 0.2),
+      1.8em -1.8em 0 0em rgba(0, 123, 255, 0.5),
+      2.5em 0em 0 0em rgba(0, 123, 255, 0.7), 1.75em 1.75em 0 0em #007bff,
+      0em 2.5em 0 0em rgba(0, 123, 255, 0.2),
+      -1.8em 1.8em 0 0em rgba(0, 123, 255, 0.2),
+      -2.6em 0em 0 0em rgba(0, 123, 255, 0.2),
+      -1.8em -1.8em 0 0em rgba(0, 123, 255, 0.2);
+  }
+  50% {
+    box-shadow: 0em -2.6em 0em 0em rgba(0, 123, 255, 0.2),
+      1.8em -1.8em 0 0em rgba(0, 123, 255, 0.2),
+      2.5em 0em 0 0em rgba(0, 123, 255, 0.5),
+      1.75em 1.75em 0 0em rgba(0, 123, 255, 0.7), 0em 2.5em 0 0em #007bff,
+      -1.8em 1.8em 0 0em rgba(0, 123, 255, 0.2),
+      -2.6em 0em 0 0em rgba(0, 123, 255, 0.2),
+      -1.8em -1.8em 0 0em rgba(0, 123, 255, 0.2);
+  }
+  62.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(0, 123, 255, 0.2),
+      1.8em -1.8em 0 0em rgba(0, 123, 255, 0.2),
+      2.5em 0em 0 0em rgba(0, 123, 255, 0.2),
+      1.75em 1.75em 0 0em rgba(0, 123, 255, 0.5),
+      0em 2.5em 0 0em rgba(0, 123, 255, 0.7), -1.8em 1.8em 0 0em #007bff,
+      -2.6em 0em 0 0em rgba(0, 123, 255, 0.2),
+      -1.8em -1.8em 0 0em rgba(0, 123, 255, 0.2);
+  }
+  75% {
+    box-shadow: 0em -2.6em 0em 0em rgba(0, 123, 255, 0.2),
+      1.8em -1.8em 0 0em rgba(0, 123, 255, 0.2),
+      2.5em 0em 0 0em rgba(0, 123, 255, 0.2),
+      1.75em 1.75em 0 0em rgba(0, 123, 255, 0.2),
+      0em 2.5em 0 0em rgba(0, 123, 255, 0.5),
+      -1.8em 1.8em 0 0em rgba(0, 123, 255, 0.7), -2.6em 0em 0 0em #007bff,
+      -1.8em -1.8em 0 0em rgba(0, 123, 255, 0.2);
+  }
+  87.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(0, 123, 255, 0.2),
+      1.8em -1.8em 0 0em rgba(0, 123, 255, 0.2),
+      2.5em 0em 0 0em rgba(0, 123, 255, 0.2),
+      1.75em 1.75em 0 0em rgba(0, 123, 255, 0.2),
+      0em 2.5em 0 0em rgba(0, 123, 255, 0.2),
+      -1.8em 1.8em 0 0em rgba(0, 123, 255, 0.5),
+      -2.6em 0em 0 0em rgba(0, 123, 255, 0.7), -1.8em -1.8em 0 0em #007bff;
+  }
+}
+ 
+ 
+/* HTML: <div class="loader"></div> */
+.MuiPagination-ul {
+  justify-content: center;
+  padding: 20px 0 !important;
+}
+.css-1ahi5tg-MuiSnackbar-root {
+  position: fixed;
+  display: inline-block;
+  bottom: 90vh !important;
+}
+ 
+.UpButton{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--main-green-color);
+  padding: 8px 12px;
+}
+.UpButton svg{
+  font-weight: bold;
+  font-size: 20px;
 }

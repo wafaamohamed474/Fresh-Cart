@@ -1,0 +1,64 @@
+.registerBox {
+  justify-content: center;
+}
+.registerBox .content {
+  padding: 50px 60px;
+  background-color: var(--form-bg-color);
+  border-radius: 30px;
+}
+.content h2 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  color: var(--nav-link-color);
+}
+.input-form {
+  margin-bottom: 10px;
+}
+label {
+  width: 100%;
+  display: flex !important;
+  justify-content: space-between;
+  font-size: 16px;
+  color: var(--nav-link-color) ;
+}
+input {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+input:focus {
+  outline: none;
+}
+.registerBtn {
+  background-color: #cccccc !important;
+  cursor: pointer;
+}
+
+.BtnHover:hover {
+  background-color: var(--main-green-color) !important;
+  cursor: pointer !important;
+  transition: all 0.5s;
+}
+.alertMsg {
+   
+  background-color: var(--alert-bg);
+  margin: 10px auto;
+  text-align: center;
+  padding: 15px 0;
+  border-radius: 5px;
+  border: 1px solid var(--alert-border-color);
+}
+.registerBox .alertMsg{
+  width: 50%;
+}
+@media (max-width: 767px) {
+  .content h2 {
+    font-size: 25px;
+  }
+  .alertMsg {
+    font-size: 14px;
+    width: 100%;
+    padding: 10px 0;
+  }
+}

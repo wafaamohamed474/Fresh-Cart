@@ -1,0 +1,43 @@
+.notFound{
+    height: 100vh;
+}
+.notFound .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+.notFound img{
+    width: 50%;
+}
+.notFound .title{
+    color: #055160;
+    width: 100%;
+    background-color: #cff4fc;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+.notFound .title span{
+    display: block;
+    font-size: 16px;
+}
+.notFound a{
+    background-color: var(--main-green-color);
+    padding: 5px 15px;
+    color: white;
+    border-radius: 5px;
+  
+}
+@media  (max-width : 767px) {
+    .notFound img{
+        width: 80%;
+    }
+    .notFound .title{
+        font-size: 1rem;
+        padding: 15px 
+    }
+}

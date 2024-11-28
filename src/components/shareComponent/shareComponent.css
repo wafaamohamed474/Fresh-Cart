@@ -1,0 +1,43 @@
+.shareComponent {
+  padding-top: 200px;
+}
+.shareComponent .col-md-3 {
+  padding: 1.5rem;
+  margin-bottom: 30px;
+}
+.shareComponent .col-md-3 .box-content {
+  padding: 20px 15px;
+  transition: all 0.5s;
+  border-radius: 2px;
+}
+.shareComponent .col-md-3 .box-content:hover {
+  box-shadow: 0 0 2px 5px var(--main-green-color);
+}
+.shareComponent .Image-box {
+  height: 300px;
+  border-bottom: 2px solid var(--border-color);
+}
+.shareComponent .Image-box img {
+  height: 100%;
+}
+.shareComponent h5 {
+  margin: 20px 0 5px 0;
+  color: var(--nav-link-color);
+}
+.shareComponent h1 {
+  font-weight: 600;
+  color: var(--nav-link-color);
+}
+.shareComponent h1 span {
+  color: var(--main-green-color);
+}
+.shareComponent .box-content span {
+  color: var(--main-green-color);
+  font-weight: 600;
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  .shareComponent .Image-box {
+    height: 180px;
+  }
+}

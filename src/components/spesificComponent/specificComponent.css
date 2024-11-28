@@ -1,0 +1,49 @@
+.specificComponent .row {
+  background-color: var(--form-bg-color);
+  padding: 30px;
+  border-radius: 5px;
+}
+.specificComponent .row .col-12 {
+  margin-top: 20px;
+}
+.specificComponent .imageBox {
+  border-radius: 5px;
+  overflow: hidden;
+}
+.specificComponent .spacificDetails h2 {
+  font-size: 24px;
+  color: var(--nav-Link-color);
+}
+.specificComponent .spacificDetails h3 {
+  font-size: 20px;
+  color: var(--nav-Link-color);
+}
+.specificComponent .spacificDetails h4 {
+  font-size: 16px;
+  color: var(--main-green-color);
+}
+.specificComponent .spacificDetails p {
+  color: var(--nav-Link-color);
+  font-weight: 500;
+}
+.specificComponent .spacificDetails p:first-of-type {
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+.specificComponent .spacificDetails p span {
+  color: var(--main-text-color);
+}
+@media (max-width: 768px) {
+  .specificComponent .row {
+    padding: 10px;
+  }
+  .specificComponent .spacificDetails h2 {
+    font-size: 21px;
+  }
+  .specificComponent .spacificDetails h3 {
+    font-size: 18px;
+  }
+  .specificComponent .spacificDetails p {
+    font-size: 14px;
+  }
+}

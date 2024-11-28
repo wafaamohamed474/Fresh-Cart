@@ -1,0 +1,45 @@
+.footer {
+  background-color: var(--form-bg-color);
+  padding: 50px 0;
+}
+.footer h4 {
+  font-size: 23px;
+  color: var(--nav-link-color) !important;
+  font-weight: 300;
+}
+.footer h6 {
+  color: #212529bf;
+  font-size: 16px;
+  font-weight: 300;
+}
+.footer button {
+  background-color: var(--main-green-color);
+}
+.footer .box {
+  display: flex;
+  align-items: center;
+}
+.footer .box:last-of-type img {
+  width: 50px;
+}
+.footer .payment-row{
+    justify-content: space-between;
+}
+.copyRights{
+    text-align: center;
+}
+.copyRights span{
+    color: var(--main-green-color);
+}
+
+@media(max-width : 767px){
+    .footer{
+        text-align: center;
+    }
+    .shareAppLink{
+        width: 100%;
+    }
+    .footer .box{
+        justify-content: center  ;
+    }
+}

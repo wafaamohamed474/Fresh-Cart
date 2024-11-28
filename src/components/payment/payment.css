@@ -1,0 +1,72 @@
+
+
+
+.payment .col-lg-6{
+    margin-bottom: 20px;
+}
+.payment .row:first-of-type{
+    justify-content: center;
+    align-items: center;
+}
+.payment .row2{
+    background-color: var(--form-bg-color);
+    padding: 30px;
+    border-radius: 10px;
+}
+.payment .row2 h3{
+    color: var(--nav-link-color);
+   margin: 0;
+}
+.payment .row2 h6{
+    color: var(--main-green-color);
+   margin-top: 20px;
+}
+.payment form{
+    padding-top: 30px;
+}
+.payment form .form-group{
+    margin-bottom: 10px;
+}
+.payment form label{
+  color: var(--nav-link-color);
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.payment form button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--nav-link-color);
+    color: white;
+    margin-top: 20px;
+}
+.payment form button:hover{
+    opacity: .7;
+}
+.payment form button img{
+    width: 40px;
+    height: 40px;
+}
+.payment form .error{
+    color: var( --Asterisk-color);
+}
+@media (max-width:768px) {
+    .payment form button img{
+        width: 30px;
+        height: 30px;
+    }
+    .payment form button{
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+}
+
+.payment .css-1ahi5tg-MuiSnackbar-root{
+    position: fixed !important;
+    display: inline-block !important;
+    z-index: 100000;
+    top: 50px;
+}

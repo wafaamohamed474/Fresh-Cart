@@ -1,0 +1,34 @@
+.VerifyResetCode .right h2 {
+  font-size: 26px;
+  color: var(--main-text-color);
+}
+.VerifyResetCode .right p,
+.right label {
+  margin-bottom: 30px !important;
+  color: var(--main-text-color);
+}
+.VerifyResetCode .right label {
+  font-size: 18px;
+}
+.input-bg {
+  background-color: rgba(248, 249, 250, 1);
+  padding: 25px;
+  border-radius: 8px;
+}
+.sendAntherCode{
+    border: none;
+}
+.sendAntherCode span{
+    color: #0d6efd;
+}
+@media(max-width:767px){
+  .VerifyResetCode .right label , .right p {
+    font-size: 14px;
+  }
+  .input-bg {
+    padding: 15px;
+  }
+}
+ 
+ 
+ 

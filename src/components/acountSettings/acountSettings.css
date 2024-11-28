@@ -1,0 +1,56 @@
+.accountSettings .form-group {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+.accountSettings .form-group input {
+  background-color: #e9ecef;
+  padding: 6px 12px;
+  font-size: 16px;
+  color: var(--main-text-color);
+}
+.accountSettings .form-group label {
+  width: 20vw;
+  font-size: 18px;
+  color: var(--nav-link-color);
+  font-weight: 500;
+}
+.accountSettings .form-group .input-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70vw;
+}
+.accountSettings form .btn {
+  background-color: var(--main-green-color);
+  color: white;
+  padding: 6px 20px;
+}
+.accountSettings form .btn:hover {
+  opacity: 0.7;
+}
+.accountSettings .form-group svg {
+  padding-left: 10px;
+  color: var(--main-text-color);
+}
+@media (max-width: 992px) {
+  .accountSettings form {
+    width: 100%;
+  }
+  .accountSettings .form-group label {
+    width: 30vw;
+  }
+}
+@media (max-width: 767px) {
+  .accountSettings {
+    margin-top: 20px;
+  }
+  .privacySettings .form-group {
+    display: block;
+  }
+  .privacySettings .form-group label,
+  .privacySettings .form-group .input-div {
+    width: 100%;
+  }
+}

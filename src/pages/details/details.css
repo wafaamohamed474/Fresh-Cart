@@ -1,0 +1,96 @@
+.details .imageBox {
+  padding: 20px 5px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.details .imageBoxTop {
+  width: 300px;
+  height: 350px;
+  margin-bottom: 10px;
+}
+.details .imageBoxBottom {
+  width: 100%;
+}
+.details .imageBoxBottom .imageDiv {
+  height: 130px;
+  padding: 5px;
+}
+.details .imageBoxBottom .imageDiv:focus {
+  outline: 0;
+}
+.details img {
+  height: 100%;
+}
+.details .detailsContent {
+  padding: 20px;
+}
+.details .detailsContent .brandCard {
+  width: 300px;
+  height: 250px;
+  transition: all 0.5s;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.details .detailsContent .brandCard img {
+  padding: 10px 20px;
+}
+.details .detailsContent .brandCard:hover {
+  box-shadow: 0 0 2px 5px var(--main-green-color);
+}
+.details .detailsContent .brandLink {
+  display: inline-block;
+}
+.details .detailsContent h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.details .detailsContent p {
+  font-weight: 500;
+  color: var(--nav-link-color);
+}
+.details .detailsContent p span {
+  font-weight: normal;
+  color: var(--main-text-color);
+}
+.details .detailsContent svg {
+  margin-left: 5px;
+  color: var(--nav-link-color);
+}
+.details .PriceRating p {
+  margin: 0;
+}
+.details .PriceRating svg {
+  color: rgb(249, 193, 73);
+  margin-right: 5px;
+}
+.details .btnsDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  transition: ease 0.5s;
+}
+.details .btnsDiv .btn {
+  background-color: var(--main-green-color);
+  color: white;
+  width: 100%;
+}
+.details .btnsDiv .btn:hover{
+  opacity: .7;
+}
+.details .imageBox .btn {
+  background-color: var(--main-green-color);
+  color: white;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+@media (max-width: 992px) {
+  .details .imageBoxBottom {
+    width: 60%;
+  }
+}

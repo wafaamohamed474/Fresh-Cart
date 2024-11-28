@@ -1,0 +1,32 @@
+.loginBox {
+  padding: 50px;
+  background-color: var(--form-bg-color);
+  border-radius: 30px;
+}
+.loginBox iframe {
+  height: 300px;
+}
+.greenLink {
+  color: var(--main-green-color);
+  text-decoration: underline !important;
+  font-weight: 300 !important;
+}
+ .loginBtn {
+  background-color: #cccccc !important;
+  cursor: pointer;
+  width:fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.loginBox .alertMsg {
+  font-size: 14px;
+  width: 100%;
+  padding: 10px 0;
+}
+@media (max-width: 767px) {
+  .greenLink {
+    display: block;
+  }
+}

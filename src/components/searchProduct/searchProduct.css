@@ -1,0 +1,51 @@
+.navbar form .searchProducts {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 500px;
+  height: 300px;
+  overflow: scroll;
+  background-color:var(--bg-nav);
+  padding: 20px;
+  border-radius: 5px;
+}
+.navbar form .searchProducts .searchContent {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5px 0;
+  border-radius: 5px;
+  padding: 5px 0;
+}
+.navbar form .searchProducts .searchContent:hover{
+    background-color:var(--form-bg-color);
+}
+.navbar form .searchProducts .searchContent .imageBox {
+  width: 20%;
+  height: 80px;
+  border-radius: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar form .searchProducts .searchContent .imageBox img {
+  height: 100%;
+}
+.navbar form .searchProducts .searchContent .searchDetails {
+    width: 70%;
+}
+.navbar form .searchProducts .searchContent h5{
+    font-size: 16px;
+    color: var(--nav-link-color);
+}
+.navbar form .searchProducts .searchContent span{
+    color: var(--main-green-color);
+}
+@media (max-width: 768px) {
+  .navbar form .searchProducts{
+    width:  100%;
+  }
+  
+}
