@@ -10,12 +10,10 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-
 import "./Navbar.css";
-let Links = document.getElementsByClassName("navbarLinks");
 
 function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const toggleButtonFunc = () => {
     setIsOpen(!isOpen);
   };

@@ -14,9 +14,6 @@ const Settings = () => {
               <NavLink to="privacy-settings" className="btn">
                 Privacy Settings
               </NavLink>
-              <NavLink to="address-settings" className="btn">
-                Address Settings
-              </NavLink>
             </div>
           </div>
           <div className="col-12 col-md-8 col-lg-8">

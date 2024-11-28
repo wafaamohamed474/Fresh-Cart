@@ -166,8 +166,8 @@
   justify-content: center;
 }
 @media (max-width: 768px) {
-  .header .headerLogo img {
-    width: 150px;
+  .header .headerLogo {
+    width: 150px !important;
   }
   .header .headerLogoContent .userList {
     width: 70px;
@@ -188,7 +188,7 @@
 }
 @media (min-width: 768px) {
   .header.navbar:not(.fixedHeaderSecond) {
-    transform: translateY(-105px);
+    transform: translateY(-110px);
   }
 }
 @media (min-width: 992px) {

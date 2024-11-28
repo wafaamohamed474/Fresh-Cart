@@ -21,7 +21,6 @@ import CashPayment from "./pages/cashPayment/CashPayment";
 import Settings from "./pages/settings/Settings";
 import AcountSettings from "./components/acountSettings/AcountSettings";
 import PrivacySettings from "./components/privacySettings/PrivacySettings";
-import AddressSettings from "./components/addressSettings/AddressSettings";
 import { initializeUserData } from "./Authentication/GetData/GetData";
 import GetUserOrders from "./components/getUserOrders/GetUserOrders";
 import OnlinePayment from "./pages/onlinePayment/OnlinePayment";
@@ -86,7 +85,7 @@ function AppContent() {
                 loader={initializeUserData()}
               />
               <Route path="privacy-settings" element={<PrivacySettings />} />
-              <Route path="address-settings" element={<AddressSettings />} />
+             
             </Route>
             <Route path="/allorders" element={<GetUserOrders />} />
           </Route>
